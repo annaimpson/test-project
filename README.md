@@ -1,7 +1,3 @@
-# Wide Eye Creative
-## Technical Test
----
-
 ### Repo Details
 The repo provided here has a basic file structure and boilerplate for a small static site. We have included a simple Webpack setup for your convenience. However, you should feel free to modify or replace any aspect of this repo to best suit your needs or development preferences.
 
