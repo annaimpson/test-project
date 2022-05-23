@@ -1,0 +1,264 @@
+@use 'vars' as v;
+
+body,
+html {
+  // font-size: 16px;
+  color: $black;
+  background-color: $white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+.we__helper-text {
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+}
+
+.we__margins {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.we__title--h1 {
+    font-family: $pubsans-b;
+    @include font-scale(375px, 1440px, 35px, 55px);
+    line-height: 116%;
+    padding-bottom: 15px;
+}
+
+.we__title--h2 {
+    font-family: $pubsans-b;
+    @include font-scale(375px, 1440px, 28px, 40px);
+    line-height: 125%;
+    padding-bottom: 13px;
+}
+
+.we__title--h3 {
+    font-family: $pubsans-b;
+    @include font-scale(375px, 1440px, 23px, 32px);
+    line-height: 125%;
+    padding-bottom: 10px;
+}
+
+.we__title--h4 {
+    font-family: $pubsans-eb;
+    @include font-scale(375px, 1440px, 17px, 22px);
+    line-height: 130%;
+    padding-bottom: 10px;
+}
+
+.we__title--h5 {
+    font-family: $pubsans-b;
+    font-size: 10px;
+    line-height: 120%;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.we__copy {
+    font-family: $pubsans;
+    @include font-scale(375px, 1440px, 12px, 14px);
+    line-height: 140%;
+
+    &--large {
+        font-family: $pubsans;
+        @include font-scale(375px, 1440px, 14px, 17px);
+        line-height: 170%;
+    }
+}
+
+.we__links {
+    font-family: $pubsans-b;
+    @include font-scale(375px, 1440px, 11px, 15px);
+    line-height: 100%;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        bottom: -5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:focus {
+        &:after {
+            visibility: visible;
+            width: 100%;
+        }
+    }
+}
+
+.we__fine-print {
+    font-family: $pubsans;
+    @include font-scale(375px, 1440px, 9px, 11px);
+    opacity: 0.8;
+}
+
+.we__button {
+    font-family: $pubsans-b;
+    @include font-scale(375px, 1440px, 12px, 15px);
+    line-height: 100%;
+    text-align: center;
+    background-color: $red;
+    color: $black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+        background-color: $light-red;
+    }
+}
+
+.we__background {
+    position: relative;
+
+    &--purple {
+        background-color: $dark-purple;
+        color: $white;
+    }
+}
+
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+@media screen and (min-width: 375px) {
+
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+@media screen and (min-width: 720px) {
+    .we__margins {
+        max-width: 800px;
+    }
+
+    .we__title--h3 {
+        padding-bottom: 15px;
+    }
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+@media screen and (min-width: 960px) {
+
+    .we__margins {
+        padding-left: 50px;
+        padding-right: 50px;
+        max-width: 1300px;
+    }
+
+    .we__button {
+        border-radius: 10px;
+        padding: 15px 20px;
+    }
+
+
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+@media screen and (min-width: 1200px) {
+
+    .we__margins {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .we__button {
+        padding: 17px 20px;
+    }
+}
+
+
+
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////
+@media screen and (min-width: 1800px) {
+    .we__title--h1 {
+        font-size: 60px;
+    }
+
+    .we__title--h2 {
+        font-size: 44px;
+    }
+
+    .we__title--h3 {
+        font-size: 35px;
+    }
+
+    .we__title--h4 {
+        font-size: 24px;
+    }
+
+    .we__copy {
+        font-size: 16px;
+
+        &--large {
+            font-size: 19px;
+        }
+    }
+
+    .we__links {
+        font-size: 17px;
+    }
+
+    .we__fine-print {
+        font-size: 13px;
+    }
+
+    .we__button {
+        font-size: 17px;
+    }
+}
+
+
+
+@media (hover: hover) {
+
+    .we__links:hover {
+        &:after {
+            visibility: visible;
+            width: 100%;
+        }
+    }
+
+    .we__button:hover {
+        background-color: $light-red;
+    }
+}

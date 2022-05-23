@@ -1,0 +1,32 @@
+// Variables can go here.
+// @use is preferred
+
+$dark-purple: #381C75;
+$light-purple: #7218E2;
+$red: #FF6F76;
+$light-red: #FFCCC4;
+$blue: #1C82F8;
+$white: #ffffff;
+$black: #140F21;
+
+@font-face {
+  font-family: PublicSansBold;
+  src: url("/fonts/PublicSans-Bold.woff2") format("woff2"),
+       url("/fonts/PublicSans-Bold.woff")  format("woff");
+}
+
+@font-face {
+  font-family: PublicSansExtraBold;
+  src: url("/fonts/PublicSans-ExtraBold.woff2") format("woff2"),
+       url("/fonts/PublicSans-ExtraBold.woff")  format("woff");
+}
+
+@font-face {
+  font-family: PublicSansRegular;
+  src: url("/fonts/PublicSans-Regular.woff2") format("woff2"),
+       url("/fonts/PublicSans-Regular.woff")  format("woff");
+}
+
+$pubsans-b: "PublicSansBold", sans-serif;
+$pubsans-eb: "PublicSansExtraBold", sans-serif;
+$pubsans: "Knockout69", sans-serif;
